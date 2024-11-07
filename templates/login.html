@@ -17,18 +17,18 @@
   <form action="/login" method="post">
     <p>
       <label for="username">Tunnus:</label><br />
-      <input type="text" id="username" name="username">
+      <input type="text" id="username" name="username" />
     </p>
     <p>
       <label for="password">Salasana</label>:<br />
-      <input type="password" id="password" name="password">
+      <input type="password" id="password" name="password" />
     </p>
     {% if next_page %}
-    <input type="hidden" name="next_page" value="{{ next_page }}">
+    <input type="hidden" name="next_page" value="{{ next_page }}" />
     {% else %}
-    <input type="hidden" name="next_page" value="/">
+    <input type="hidden" name="next_page" value="/" />
     {% endif %}
-    <input type="submit" value="Kirjaudu">
+    <input type="submit" value="Kirjaudu" />
   </form>
 
   <hr />

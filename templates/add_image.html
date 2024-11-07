@@ -21,10 +21,10 @@
   <form action="/add_image" method="post" enctype="multipart/form-data">
     <p>
       <label for="image">Kuva:</label>
-      <input type="file" id="image" name="image" accept=".jpg">
+      <input type="file" id="image" name="image" accept=".jpg" />
     </p>
-    <input type="hidden" name="csrf_token" value="{{ session.csrf_token }}">
-    <input type="submit" value="Lähetä">
+    <input type="hidden" name="csrf_token" value="{{ session.csrf_token }}" />
+    <input type="submit" value="Lähetä" />
   </form>
 </body>
 
